@@ -1,2 +1,8 @@
-# PasswordsToSamsungPass
 Este projeto é um script que automatiza a exportação de senhas salvos em arquivo .CSV, orginados de navegadores como o Chrome e o EDGE. O programa realiza a leitura de um arquivo CSV, contendo informações sobre nome, usuário e senha, e as utiliza para preencher os campos do Samsung Pass.
+O código usa as bibliotecas "robotjs", "fs", "csv", "node-clipboardy" e "readline-sync". A biblioteca "robotjs" é usada para controlar o mouse e teclado e permitir a automação das açõe. "fs" é utilizada para a leitura e escrita de arquivos, "csv" é usada para a leitura do arquivo CSV contendo as informações a serem preenchidas e "node-clipboardy" é usada para gerenciar a área de transferência do sistema. "readline-sync" é utilizada para a obtenção do caminho para o arquivo CSV a partir da entrada do usuário.
+O programa utiliza funções assíncronas para gerenciar o tempo de espera durante as ações executadas pelo robô. A função "readSourceCSV" realiza a leitura do arquivo CSV e retorna um array com os dados. A função "timeSpace" é usada para gerenciar o tempo de espera entre as ações do robô. As funções "goToAddButton", "goToEntry", "moveToPasteOption", "openBuildLogFile", "closeBuildLogFile", "buildLog", "returnScreen" e "addInformations" realizam ações específicas no software.
+O programa também possui a função "isValidFilePath" para validar o caminho do arquivo CSV fornecido pelo usuário e a função "exec" que executa o script, fazendo a leitura do arquivo CSV e preenchendo as informações no software. O programa pede ao usuário o caminho para o arquivo CSV a ser lido e, em seguida, executa o preenchimento das informações.
+Para usar o programa, basta executar o script “inedx.js” com o seu Runtime de node instaldo no computador.
+
+Exemplo: Estando no diretório do projeto, abra um terminal e digite “node index.js”.
+Em seguida, basta seguir as instruções na tela do terminal.
