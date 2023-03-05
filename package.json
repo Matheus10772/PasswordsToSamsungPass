@@ -1,0 +1,21 @@
+{
+  "name": "automacao-de-senhas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Matheus de Castro Oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "clipboardy": "^3.0.0",
+    "csv": "^6.2.7",
+    "install": "^0.13.0",
+    "node-clipboardy": "^1.0.3",
+    "npm": "^9.5.0",
+    "readline-sync": "^1.4.10",
+    "robotjs": "^0.6.0"
+  }
+}
